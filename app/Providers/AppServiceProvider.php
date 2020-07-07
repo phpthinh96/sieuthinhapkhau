@@ -45,7 +45,7 @@ class AppServiceProvider extends ServiceProvider
         view()->share('sanphambanchay1',$sanphambanchay1);
         view()->share('sanphambanchay2',$sanphambanchay2);
 
-        Validator::extend('recaptcha', 'App\Validators\ReCaptcha@validate');
+        // Validator::extend('recaptcha', 'App\Validators\ReCaptcha@validate');
     
         
     }

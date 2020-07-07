@@ -56,7 +56,7 @@
                                         {!! $errors->first('password') !!}
                                     </div> 
                                 </div>
-                                <div class="g-recaptcha form-group" data-sitekey="6LeA808UAAAAAOXRLeNNJ8Sf2nwwTJXh8LaZMj_L"></div> 
+                                {{-- <div class="g-recaptcha form-group" data-sitekey="6LeA808UAAAAAOXRLeNNJ8Sf2nwwTJXh8LaZMj_L"></div>  --}}
                                 <button type="submit" class="btn btn-lg btn-success btn-block">Đăng nhập</button>
 
                             </fieldset>

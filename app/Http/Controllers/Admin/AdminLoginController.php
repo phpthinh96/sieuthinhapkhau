@@ -24,7 +24,7 @@ class AdminLoginController extends Controller
             [
                 'email' => 'required',
                 'password' => 'required',
-                'g-recaptcha-response'=>'required|recaptcha'
+                // 'g-recaptcha-response'=>'required|recaptcha'
             ],
             [
                 'email.required' => 'Ban chưa nhập email',
@@ -35,6 +35,7 @@ class AdminLoginController extends Controller
         if (Auth::guard('admin')->attempt(['email'=>$request->email,'password'=>$request->password])) {
             return redirect('admin/trangchu');
         } else {
+            print('password' + $request->password);
             return redirect('admin/login')->with('thongbao','Đăng nhập không thành công');
         }
     }
